@@ -29,5 +29,9 @@ public class HelloController {
     }
 
     // TODO (Activity 3): add your /goodbye endpoint here.
+    @GetMapping("/goodbye")
+    public String goodbye(){return "Goodbye from Spring Boots!"; }
 
+    @GetMapping("/info")
+    public String info(){return "this api is my first introduction to spring boot \n" + " it contains only one class at the moment but it will be built upon";}
 }
